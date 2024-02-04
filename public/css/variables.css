@@ -1,0 +1,343 @@
+/*-----------------------------------*\
+  #variables.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2023 codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * COLORS
+   */
+
+  --black: #000000;
+  --background: #191C1A;
+  --on-background: #E1E3DF;
+  --surface: #0c0e0c;
+  --surface-variant: #404943;
+  --surface-container: #1D201E;
+  --surface-container-low: #191C1A;
+  --surface-container-high: #272B28;
+  --surface-container-highest: #323633;
+  --on-surface: #C5C7C3;
+  --on-surface-variant: #C0C9C1;
+  --primary: #12E29A;
+  --on-primary: #003823;
+  --primary-container: #005235;
+  --on-primary-container: #4BFFB4;
+  --secondary-container: #364B3F;
+  --on-secondary-container: #D0E8D7;
+  --outline: #8A938C;
+  --outline-variant: #404943;
+  --inverse-surface: #E1E3DF;
+  --inverse-on-surface: #191C1A;
+  --error: #FFB4AB;
+  --on-error: #690005;
+  --top-bar-gradient: linear-gradient(180deg, #191C1A 0%, #191C1A00 100%);
+  --white-alpha-20: #ffffff33;
+
+  /**
+   * TYPOGRAPHY
+   */
+
+  /* Font family */
+  --font-primary: 'Poppins', sans-serif;
+
+  /* Font size */
+  --fs-base: 62.5%;
+  --fs-display-large: 5.7rem;
+  --fs-display-medium: 4.5rem;
+  --fs-display-small: 3.6rem;
+  --fs-headline-large: 3.2rem;
+  --fs-headline-medium: 2.8rem;
+  --fs-headline-small: 2.4rem;
+  --fs-title-large: 2.2rem;
+  --fs-title-medium: 1.6rem;
+  --fs-title-small: 1.4rem;
+  --fs-body-large: 1.6rem;
+  --fs-body-medium: 1.4rem;
+  --fs-body-small: 1.2rem;
+  --fs-label-large: 1.4rem;
+  --fs-label-medium: 1.2rem;
+  --fs-label-small: 1.1rem;
+
+  /* Line height */
+  --lh-base: 20px;
+  --lh-display-large: 64px;
+  --lh-display-medium: 52px;
+  --lh-display-small: 44px;
+  --lh-headline-large: 40px;
+  --lh-headline-medium: 36px;
+  --lh-headline-small: 32px;
+  --lh-title-large: 28px;
+  --lh-title-medium: 24px;
+  --lh-title-small: 20px;
+  --lh-body-large: 24px;
+  --lh-body-medium: 20px;
+  --lh-body-small: 16px;
+  --lh-label-large: 20px;
+  --lh-label-medium: 16px;
+  --lh-label-small: 16px;
+
+  /* Font weight */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-black: 900;
+
+  /* Letter spacing */
+  --ls-n-025: -0.25px;
+  --ls-p-010: 0.10px;
+  --ls-p-015: 0.15px;
+  --ls-p-025: 0.25px;
+  --ls-p-040: 0.40px;
+  --ls-p-050: 0.50px;
+
+  /**
+   * SPACING
+   */
+  
+  --space-base: 4px;
+  --space-05: calc(var(--space-base) * 0.5);
+  --space-1: calc(var(--space-base) * 1);
+  --space-2: calc(var(--space-base) * 2);
+  --space-3: calc(var(--space-base) * 3);
+  --space-4: calc(var(--space-base) * 4);
+  --space-5: calc(var(--space-base) * 5);
+  --space-6: calc(var(--space-base) * 6);
+  --space-7: calc(var(--space-base) * 7);
+  --space-8: calc(var(--space-base) * 8);
+  --space-9: calc(var(--space-base) * 9);
+  --space-10: calc(var(--space-base) * 10);
+  --space-11: calc(var(--space-base) * 11);
+  --space-12: calc(var(--space-base) * 12);
+  --space-13: calc(var(--space-base) * 13);
+  --space-14: calc(var(--space-base) * 14);
+  --space-15: calc(var(--space-base) * 15);
+  --space-16: calc(var(--space-base) * 16);
+  --space-17: calc(var(--space-base) * 17);
+  --space-18: calc(var(--space-base) * 18);
+  --space-19: calc(var(--space-base) * 19);
+  --space-20: calc(var(--space-base) * 20);
+
+  /**
+   * BOX SHADOW
+   */
+
+  --shadow-1: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+  --shadow-2: 0px 2px 6px 2px #00000026, 0px 1px 2px 0px #0000004d;
+  --shadow-3: 0px 1px 3px 0px #0000004d, 0px 4px 8px 3px #00000026;
+  --shadow-4: 0px 2px 3px 0px #0000004d, 0px 6px 10px 4px #00000026;
+  --shadow-5: 0px 4px 4px 0px #0000004d, 0px 8px 12px 6px #00000026;
+
+  /**
+   * BORDER RADIUS
+   */
+
+  --radius-extra-small: 4px;
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-extra-large: 28px;
+  --radius-full: 1000px;
+
+  /**
+   * TRANSITION
+   */
+  
+  --tr-duration-short-1: 50ms;
+  --tr-duration-short-2: 100ms;
+  --tr-duration-short-3: 150ms;
+  --tr-duration-short-4: 200ms;
+  --tr-duration-medium-1: 250ms;
+  --tr-duration-medium-2: 300ms;
+  --tr-duration-medium-3: 350ms;
+  --tr-duration-medium-4: 400ms;
+  --tr-duration-long-1: 450ms;
+  --tr-duration-long-2: 500ms;
+  --tr-duration-long-3: 550ms;
+  --tr-duration-long-4: 600ms;
+  --tr-duration-extra-long-1: 700ms;
+  --tr-duration-extra-long-2: 800ms;
+  --tr-duration-extra-long-3: 900ms;
+  --tr-duration-extra-long-4: 1000ms;
+  --tr-easing-linear: cubic-bezier(0, 0, 1, 1);
+  --tr-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --tr-easing-standard-decelerate: cubic-bezier(0, 0, 0, 1);
+  --tr-easing-standard-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --tr-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --tr-easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --tr-easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
+
+  /**
+   * OTHERS
+   */
+
+  --top-bar-height: 64px;
+  --bottom-nav-height: 80px;
+  --player-sm-height: 80px;
+  --player-lg-height: 96px;
+  --navigation-rail-width: 80px;
+
+}
+
+
+
+:root{
+  --primary: #B5A1E5; 
+  --on-primary: #100E17; 
+  --background: #000000;
+  --on-background: #EAE6F2;
+  --border-dark: #333;
+
+  --surface: #1D1C1F;
+  --on-surface: #DDDAE5;
+  --on-surface-variant: #7B7980; 
+  --on-surface-variant-2: #B9B6BF;
+  --outline: #3E3D40;
+  --bg-aqi-1: #89E589;
+  --on-bg-aqi-1: #1F331F;
+  --bg-aqi-2: #E5DD89;
+  --on-bg-aqi-2: #33311F;
+  --bg-aqi-3: #E5C089;
+  --on-bg-aqi-3: #332B1F;
+  --bg-aqi-4: #E58989;
+  --on-bg-aqi-4: #331F1F;
+  --bg-aqi-5: #E589B7;
+  --on-bg-aqi-5: #331F29;
+  --white: hsl(0, 0%, 100%);
+  --white-alpha-4: hsla(0, 0%, 100%, 0.04);
+  --white-alpha-8: hsla(0, 0%, 100%, 0.08);
+  --black-alpha-10: hsla(0, 0%, 0%, 0.1);
+}
+:root {
+  --shadow-color: var(--color-neutral-80);
+  --shadow-small: 0rem 1rem 2rem hsl(var(--shadow-color)/.02);
+  --shadow-large: 0rem 1rem 2rem hsl(var(--shadow-color)/.04);
+  --focus-box-shadow: 0 0 0 .0625rem hsl(var(--color-information-100)), 0 0 0 .25rem hsl(var(--color-information-100)/.25);
+}
+
+
+
+:root {
+  --dropdown-menu-background-color: #fff;
+  --dropdown-menu-divider-color: rgba(211,220,226,.5);
+  --dropdown-menu-hover-background-color: #f1f4f6;
+  --dropdown-menu-icon-color: #7e8999;
+  --dropdown-menu-icon-disabled-color: rgba(126,137,153,.5);
+  --dropdown-menu-text-color: #282c32;
+  --dropdown-menu-text-disabled-color: rgba(40,44,50,.5);
+}
+
+:root {
+  --segmented-control-background-color: #f1f4f6;
+  --segmented-control-selected-label-background-color: #282c32;
+  --segmented-control-selected-label-color: #fff;
+  --segmented-control-separator-color: #d3dce2;
+}
+:root {
+  --switch-thumb-background-color: #fff;
+  --switch-off-button-background-color: #d3dce2;
+  --switch-on-button-background-color: #2f93f6;
+}
+:root {
+  --checkbox-box-background-color: #fff;
+  --checkbox-box-border-color: #d3dce2;
+  --checkbox-box-icon-color: #fff;
+  --checkbox-hover-box-background-color: rgba(47,147,246,.2);
+  --checkbox-hover-box-border-color: #2f93f6;
+  --checkbox-checked-box-background-color: #2f93f6;
+  --checkbox-checked-box-border-color: transparent;
+}
+:root {
+  --radio-button-background-color: #fff;
+  --radio-button-border-color: #d3dce2;
+  --radio-button-hover-background-color: rgba(47,147,246,.2);
+  --radio-button-hover-border-color: #2f93f6;
+  --radio-button-checked-background-color: #2f93f6;
+  --radio-button-checked-border-color: transparent;
+  --radio-button-checked-indicator-color: #fff;
+}
+:root {
+  --input-text-enabled-background-color: #f1f4f6;
+  --input-text-error-border-color: #f12c18;
+  --input-text-focused-border-color: #d3dce2;
+}
+:root {
+  --close-button-transparent-background-color: transparent;
+  --close-button-transparent-text-color: #282c32;
+  --close-button-transparent-hover-background-color: #f1f4f6;
+  --close-button-translucent-background-color: hsla(0,0%,100%,.502);
+  --text-button-translucent-background-color: hsla(0,0%,100%,.502);
+  --close-button-translucent-text-color: #282c32;
+  --close-button-translucent-hover-background-color: #f1f4f6;
+}
+:root {
+  --inline-button-background-color: transparent;
+  --inline-button-text-color: #282c32;
+  --inline-button-hover-background-color: #d3dce2;
+  --inline-button-pressed-background-color: #282c32;
+  --inline-button-pressed-text-color: #fff;
+}
+:root {
+  --button-primary-background-color: #282c32;
+  --button-primary-text-color: #fff;
+  --button-primary-hover-background-color: #181d20;
+  --button-secondary-background-color: #f1f4f6;
+  --button-secondary-text-color: #282c32;
+  --button-secondary-hover-background-color: #d3dce2;
+  --button-red-background-color: #f12c18;
+  --button-red-text-color: #fff;
+  --button-red-hover-background-color: #c81d0c;
+  --button-red-secondary-background-color: rgba(241,44,24,.2);
+  --button-red-secondary-text-color: #f12c18;
+  --button-red-secondary-hover-background-color: rgba(241,44,24,.502);
+  --button-green-background-color: #00c37d;
+  --button-green-text-color: #fff;
+  --button-green-hover-background-color: #009c63;
+  --button-blue-background-color: #2f93f6;
+  --button-blue-text-color: #fff;
+  --button-blue-hover-background-color: #0a75e1;
+  --button-blue-secondary-background-color: rgba(47,147,246,.2);
+  --button-blue-secondary-text-color: #2f93f6;
+  --button-blue-secondary-hover-background-color: rgba(47,147,246,.502);
+  --button-yellow-background-color: #ffaf13;
+  --button-yellow-text-color: #282c32;
+  --button-yellow-hover-background-color: #f7a300;
+  --button-yellow-secondary-background-color: rgba(255,175,19,.2);
+  --button-yellow-secondary-text-color: #ffaf13;
+  --button-yellow-secondary-hover-background-color: rgba(255,175,19,.502);
+  --button-purple-background-color: #b400ff;
+  --button-purple-text-color: #fff;
+  --button-purple-hover-background-color: #8f00cc;
+  --button-transparent-background-color: transparent;
+  --button-transparent-text-color: #282c32;
+  --button-transparent-hover-background-color: #f1f4f6;
+}
+:root {
+  --main-header-height: 4rem;
+}
+
+
+:root {
+  --shadow-color: var(--color-neutral-80);
+  --shadow-small: 0rem 1rem 2rem hsl(var(--shadow-color)/.02);
+  --shadow-large: 0rem 1rem 2rem hsl(var(--shadow-color)/.04);
+  --focus-box-shadow: 0 0 0 .0625rem hsl(var(--color-information-100)), 0 0 0 .25rem hsl(var(--color-information-100)/.25);
+}
+:root {
+  --border-radius-xsmall: .25rem;
+  --border-radius-small: .5rem;
+  --border-radius-medium: 1rem;
+  --border-radius-large: 1.5rem;
+  --border-radius-circular: 50%;
+}

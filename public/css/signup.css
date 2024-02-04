@@ -1,0 +1,110 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+@import url('./variables.css');
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+@import url('./reset.css');
+
+/*-----------------------------------*\
+  #TYPOGRAPHY
+\*-----------------------------------*/
+@import url('./typography.css');
+
+/*-----------------------------------*\
+  #TYPOGRAPHY
+\*-----------------------------------*/
+@import url('./base.css');
+body{
+    background-image: url('/images/login-bg-pattern.png');
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+}
+
+@media (max-width: 768px){
+    .sign-up-form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border-radius: var(--radius-small);
+        color: var(--on-primary);
+        
+        padding: 16px;
+        min-width: 90%;
+        max-height: 55%;
+        gap: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-up-form .btn{
+        padding: 16px;
+        margin-bottom: 12px;
+        position: relative;
+        top: 1rem;
+    }
+}
+.sign-up-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: var(--radius-small);
+    color: var(--on-primary);
+    
+    padding: 16px;
+    width: 30%;
+    height: 90%;
+    gap: 12px;
+    display: flex;
+    flex-direction: column; 
+}
+.sign-up-form .btn{
+    background-color: none;
+    border: 1px solid #212121;
+    width: 100%;
+    margin-top: 2rem;
+}
+.top-form-container{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.section-input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.input-field{
+    padding: 10px;
+    background: #ededed;
+    border-radius: 7px;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+}
+.redirect-sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 1rem;
+}
+.btn{
+    height: 38px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    border-radius: var(--radius-full);
+    color: var(--on-primary);
+    --state-layer-bg: var(--on-primary);
+    transition: box-shadow var(--tr-duration-short-2) var(--tr-easing-linear);
+    font-weight: 600;
+}
